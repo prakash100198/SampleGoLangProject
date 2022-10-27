@@ -8,8 +8,8 @@ import (
 	// "gorm.io/driver/postgres"
 	// "gorm.io/gorm"
 	// repository "attendance/Package/repository"
-	models "attendance/Package/Models"
-	services "attendance/Package/Services"
+	models "attendance/Models"
+	services "attendance/Services"
 
 	"github.com/gorilla/mux"
 	// "github.com/jinzhu/gorm"

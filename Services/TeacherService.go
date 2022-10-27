@@ -1,8 +1,8 @@
 package services
 
 import (
-	models "attendance/Package/Models"
-	repository "attendance/Package/Repository"
+	models "attendance/Models"
+	repository "attendance/Repository"
 )
 
 type TeacherService interface { //this is an abstraction layer, we don't want to expose the implementation to rest handlers directly thats why we are doing it via interfaces.

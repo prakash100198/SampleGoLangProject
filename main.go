@@ -2,11 +2,11 @@ package main
 
 import (
 	// models "attendance/Package/Models"
-	models "attendance/Package/Models"
-	repository "attendance/Package/Repository"
-	rest_handlers "attendance/Package/RestHandlers"
-	user_routes "attendance/Package/Router"
-	services "attendance/Package/Services"
+	models "attendance/Models"
+	repository "attendance/Repository"
+	rest_handlers "attendance/RestHandlers"
+	user_routes "attendance/Router"
+	services "attendance/Services"
 	"fmt"
 	"log"
 	"net/http"
@@ -49,13 +49,17 @@ func main() {
 	// e: InitializeEvent()
 	userRoutes.InitializeRouter(r)
 	fmt.Println("initializing router..")
-	log.Fatal(http.ListenAndServe(":8090", r))
+	log.Fatal(http.ListenAndServe(":80", r))
 }
 
 func initialMigration() *gorm.DB {
 
-	dbURI := "host=localhost user=postgres dbname=postgres sslmode=disable password=prakash port=5432"
-
+	dbURI := "host=postgres-service user=postgres dbname=postgres sslmode=disable password=prakash port=8080"
+	// dbUri := "0.0.0.0:5432"
+	//"172.17.0.2"
+	//"10.110.138.86"
+	//"10.111.240.92"
+	// url := "postgres://postgres:prakash@localhost:5432/postgres?sslmode=disable"
 	var dB *gorm.DB
 	dB, err = gorm.Open("postgres", dbURI)
 

@@ -1,7 +1,7 @@
-package repository
+package repositories
 
 import (
-	models "attendance/Package/Models"
+	models "attendance/Models"
 	"strconv"
 	"time"
 

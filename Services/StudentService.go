@@ -1,8 +1,8 @@
 package services
 
 import (
-	models "attendance/Package/Models"
-	repository "attendance/Package/Repository"
+	models "attendance/Models"
+	repository "attendance/Repository"
 	"errors"
 	"fmt"
 	"strconv"

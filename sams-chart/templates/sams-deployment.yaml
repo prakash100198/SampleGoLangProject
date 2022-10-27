@@ -1,0 +1,22 @@
+apiVersion: {{.Values.apiVersionDeployment}}
+kind: {{.Values.samsDeployment.kind}}
+metadata:
+  name: {{.Values.samsDeployment.name}}
+  labels:
+    app: {{.Values.samsDeployment.labels.app}}
+spec:
+  replicas: {{.Values.replicas}}
+  selector:
+    matchLabels:
+      app: {{.Values.samsDeployment.labels.app}}
+  template: #this here is the blueprint of a pod
+    metadata:
+      labels:
+        app: {{.Values.samsDeployment.labels.app}}
+    spec:
+      containers: #container inside of a pod
+      - name: {{.Values.samsDeployment.containers.name}}
+        image: {{.Values.samsDeployment.containers.image}}
+        ports:
+        - name: {{.Values.samsDeployment.ports.name}}
+          containerPort: {{.Values.samsDeployment.ports.port}}

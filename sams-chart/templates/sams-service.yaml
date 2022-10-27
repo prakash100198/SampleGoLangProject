@@ -1,0 +1,14 @@
+apiVersion: {{.Values.apiVersionService}}
+kind: {{.Values.samsService.kind}}
+metadata:
+  name: {{.Values.samsService.name}}
+spec:
+  selector:
+    app: {{.Values.samsService.selector}}
+  ports:
+    - name: {{.Values.samsService.portname}}
+      port: {{.Values.samsService.port}}
+      targetPort: {{.Values.samsService.targetport}}
+    # - name: postgres-port
+    #   port: 8090
+    #   targetPort: 5432

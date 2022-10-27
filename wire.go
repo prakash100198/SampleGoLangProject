@@ -1,22 +1,21 @@
 package main
 
 import (
-	repository "attendance/Package/Repository"
-	rest_handlers "attendance/Package/RestHandlers"
-	user_routes "attendance/Package/Router"
-	services "attendance/Package/Services"
+	repository "attendance/Repository"
+	rest_handlers "attendance/RestHandlers"
+	user_routes "attendance/Router"
+	services "attendance/Services"
+
+	models "attendance/Models"
+	"fmt"
 
 	"github.com/google/wire"
 	"github.com/jinzhu/gorm"
-	"fmt"
-	models "attendance/Package/Models"
-
-	
 )
 
 // "fmt"
 
-func DBConnectionProvider() *gorm.DB{
+func DBConnectionProvider() *gorm.DB {
 	dbURI := "host=localhost user=postgres dbname=postgres sslmode=disable password=prakash port=5432"
 
 	var dB *gorm.DB

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sams-deployment
+  labels:
+    app: sams-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sams-app
+  template: #this here is the blueprint of a pod
+    metadata:
+      labels:
+        app: sams-app
+    spec:
+      containers: #container inside of a pod
+      - name: sams-app
+        image: prakash1001/sams-repository-8
+        ports:
+        - name: sams-port
+          containerPort: 80
