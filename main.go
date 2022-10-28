@@ -54,7 +54,7 @@ func main() {
 
 func initialMigration() *gorm.DB {
 
-	dbURI := "host=postgres-service user=postgres dbname=postgres sslmode=disable password=prakash port=8080"
+	dbURI := "host=postgres user=postgres dbname=postgres sslmode=disable password=prakash port=5432"
 	// dbUri := "0.0.0.0:5432"
 	//"172.17.0.2"
 	//"10.110.138.86"
