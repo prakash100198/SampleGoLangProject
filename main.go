@@ -49,7 +49,7 @@ func main() {
 	// e: InitializeEvent()
 	userRoutes.InitializeRouter(r)
 	fmt.Println("initializing router..")
-	log.Fatal(http.ListenAndServe(":80", r))
+	log.Fatal(http.ListenAndServe(":32026", r))
 }
 
 func initialMigration() *gorm.DB {
