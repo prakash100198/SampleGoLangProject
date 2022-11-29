@@ -54,7 +54,7 @@ func main() {
 
 func initialMigration() *gorm.DB {
 
-	dbURI := "host=postgres-test1-postgresql-0 user=postgres dbname=postgres sslmode=disable password=prakash port=5432"
+	dbURI := "host=postgres-postgresql user=postgres dbname=postgres sslmode=disable password=prakash port=5432"
 	//postgres-devtron-demo-postgresql-0
 	// url := "postgres://postgres:prakash@localhost:5432/postgres?sslmode=disable"
 	var dB *gorm.DB
