@@ -110,6 +110,7 @@ func (impl *StudentServiceImpl) PunchIn(attendanceId string, class int) (models.
 
 	}
 
+	
 	// if dayFromDB.RecordNotFound() {
 	// 	createdStudentRecord := DB.Create(&newattendance)
 	// 	checkRecordInAttendanceDB(newattendance, w, createdStudentRecord)
