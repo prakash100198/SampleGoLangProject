@@ -154,3 +154,4 @@ func (impl *StudentServiceImpl) PunchIn(attendanceId string, class int) (models.
 // 	return newstudent
 
 // }
+
