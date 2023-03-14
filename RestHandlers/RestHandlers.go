@@ -10,7 +10,6 @@ import (
 	// repository "attendance/Package/repository"
 	models "attendance/Models"
 	services "attendance/Services"
-
 	"github.com/gorilla/mux"
 	// "github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
