@@ -2,9 +2,7 @@ package user_routes
 
 import (
 	"fmt"
-
 	rest_handlers "attendance/RestHandlers"
-
 	"github.com/gorilla/mux"
 )
 
