@@ -50,5 +50,4 @@ func (impl *AppRouterInterfaceImpl) InitializeRouter(r *mux.Router) {
 
 	//this functionality is for student/teacher to get his attendance details
 	r.HandleFunc("/attendance/{id}/{month}/{year}", impl.handlers.GetOnePersonAttendance).Methods("GET") //
-
 }
