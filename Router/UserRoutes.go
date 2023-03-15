@@ -5,7 +5,6 @@ import (
 	rest_handlers "attendance/RestHandlers"
 	"github.com/gorilla/mux"
 )
-
 type AppRouterInterface interface {
 	InitializeRouter(router *mux.Router)
 }
