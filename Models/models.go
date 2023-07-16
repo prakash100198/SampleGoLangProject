@@ -4,6 +4,8 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
+
+
 type Student struct {
 	gorm.Model
 	StudentId string `json:"studentId"` //S1, S2,....
