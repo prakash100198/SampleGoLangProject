@@ -45,3 +45,6 @@ func NewModelImpl(student Student, teacher Teacher, attendance Attendance) *Mode
 	}
 	return model
 }
+
+
+
