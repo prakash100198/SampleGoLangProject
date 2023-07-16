@@ -29,6 +29,8 @@ type Attendance struct {
 	PunchInTime  string `json:"punchInTime"`
 	PunchOutTime string `json:"punchOutTime"`
 }
+
+
 type Model interface {
 }
 type ModelImpl struct {
