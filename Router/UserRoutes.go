@@ -10,6 +10,8 @@ type AppRouterInterface interface {
 	InitializeRouter(router *mux.Router)
 }
 
+
+
 type AppRouterInterfaceImpl struct {
 	handlers  rest_handlers.RestHandler
 	MuxRouter *mux.Router
