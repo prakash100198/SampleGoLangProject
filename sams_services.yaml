@@ -11,4 +11,3 @@ spec:
       targetPort: 80
     # - name: postgres-port
     #   port: 8090
-    #   targetPort: 5432
