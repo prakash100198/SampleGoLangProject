@@ -14,7 +14,7 @@ spec:
       labels:
         app: sams-app
     spec:
-      containers: #container inside of a pod
+      containers:
       - name: sams-app
         image: prakash1001/sams-repository-8
         ports:
