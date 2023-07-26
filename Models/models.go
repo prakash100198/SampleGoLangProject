@@ -4,21 +4,17 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-
-
 type Student struct {
 	gorm.Model
 	StudentId string `json:"studentId"` //S1, S2,....
 	Name      string `json:"studentName"`
 	Class     int    `json:"studentClass"`
 }
-
 type Teacher struct {
 	gorm.Model
 	TeacherId string `json:"teacherId"` //T1, T2,....
 	Name      string `json:"teacherName"`
 }
-
 type Attendance struct {
 	gorm.Model
 	AttendanceId string `json:"attendanceid"` //id would be of either student or teacher
@@ -46,6 +42,9 @@ func NewModelImpl(student Student, teacher Teacher, attendance Attendance) *Mode
 		attendance: attendance,
 	}
 	return model
+
+
+	
 }
 
 
