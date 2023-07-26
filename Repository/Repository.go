@@ -8,12 +8,7 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-
 var err error
-
-
-
-
 type Repo interface {
 	GetAttendanceByStudentId(params map[string]string) []models.Attendance
 	GetAttendanceOfAllStudents() []models.Student
@@ -38,6 +33,8 @@ type Student struct {
 	Name      string `json:"studentName"`
 	Class     int    `json:"studentClass"`
 }
+
+
 
 func NewRepoImpl(DB *gorm.DB) *RepoImpl {
 	handler := &RepoImpl{
