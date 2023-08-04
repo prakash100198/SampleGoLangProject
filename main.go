@@ -1,8 +1,5 @@
 package main
 
-
-
-
 import (
 	// models "attendance/Package/Models"
 	models "attendance/Models"
