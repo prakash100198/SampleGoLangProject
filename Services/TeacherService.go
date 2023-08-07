@@ -5,6 +5,9 @@ import (
 	repository "attendance/Repository"
 )
 
+
+
+
 type TeacherService interface { //this is an abstraction layer, we don't want to expose the implementation to rest handlers directly thats why we are doing it via interfaces.
 	GetTeacher() []models.Teacher
 	GetTeacherById(params map[string]string) []models.Attendance
