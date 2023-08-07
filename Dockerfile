@@ -10,6 +10,7 @@ RUN go build -o main .
 EXPOSE 8080
 CMD ["/app/main"]
 
+
 # Set environment variable
 # ENV APP_NAME sams
 # ENV CMD_PATH main.go
