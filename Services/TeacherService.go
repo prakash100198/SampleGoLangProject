@@ -11,6 +11,8 @@ type TeacherService interface { //this is an abstraction layer, we don't want to
 }
 
 
+
+
 type TeacherServiceImpl struct { //this is a class in java for equivalency purpose
 	// y repositoryService
 	//here whatever variables we use outside the scope of this file we put define here so that we can use in services file.
