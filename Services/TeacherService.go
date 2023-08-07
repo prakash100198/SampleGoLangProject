@@ -33,6 +33,9 @@ func (impl *TeacherServiceImpl) GetTeacher() []models.Teacher {
 
 }
 
+
+
+
 func (impl *TeacherServiceImpl) GetTeacherById(params map[string]string) []models.Attendance {
 	return impl.repoModels.GetTeacherAttendanceById(params)
 }
