@@ -24,6 +24,7 @@ func NewTeacherServiceImpl(repoModels repository.Repo) *TeacherServiceImpl {
 
 }
 
+
 func (impl *TeacherServiceImpl) GetTeacher() []models.Teacher {
 	return impl.repoModels.GetTeachers()
 
