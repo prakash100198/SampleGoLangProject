@@ -6,8 +6,8 @@ FROM golang:latest as builder
 ADD . ./app
 WORKDIR /app
 COPY . ./
-# RUN go build -o main .
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main App.go
+RUN go build -o main .
+# RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main App.go
 CMD ["/app/main"]
 
 
