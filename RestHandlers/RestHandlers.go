@@ -42,6 +42,8 @@ type PunchInInitialData struct {
 	Class        int    `json:"class"`
 }
 
+
+
 type Attendance struct {
 	AttendanceId string `json:"attendanceid"` //id would be of either student or teacher
 	Class        int    `json:"class"`
