@@ -22,6 +22,8 @@ import (
 // var DB *gorm.DB
 var err error
 
+
+
 type RestHandler interface {
 	GetStudents(w http.ResponseWriter, r *http.Request)
 	GetStudent(w http.ResponseWriter, r *http.Request)
