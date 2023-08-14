@@ -3,7 +3,7 @@
 FROM golang:latest as builder 
  
  RUN mkdir /app
-ADD ./public ./app
+ADD /public ./app
 WORKDIR /app
 # COPY . ./
 RUN go build -o main .
