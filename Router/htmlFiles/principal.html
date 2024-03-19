@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- Side nav bar code below-->
+   <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+   <div class="wrapper">
+       <div class="sidebar">
+           <h2>SAMS</h2>
+           <ul>
+               <li><a href="index.html"><i class="fas fa-student"></i>Student</a></li>
+               <li><a href="teacher.html"><i class="fas fa-teacher"></i>Teacher</a></li>
+               <li><a href="principal.html"><i class="fas fa-principal"></i>Principal</a></li>
+           </ul> 
+       </div>
+       <!-- <div class="main_content">
+           <div class="header">Welcome!! Have a nice day.</div>   -->
+           <!-- <div class="info">
+             <div>djdfjdf</div>
+             <div>d chsdcvsd</div>
+             <div>shdbhjbsd!</div>
+         </div>
+       </div> -->
+   </div>   
+
+
+<!-- Form code below--> 
+    <div class="container">
+        <h1>SAMS</h1>
+        <p>Principal</p>
+        <form>
+            <!--adding students form below-->
+            <div class="row">
+                <div class="column">
+                    <label for="studentid">Student ID</label>
+                    <input type="text" id="studentid" placeholder="Student Id here(Will be auto-generated)">
+                </div>
+                <div class="column">
+                    <label for="studentname">StudentName</label>
+                    <input type="text" id="studentname" placeholder="Student Name here">
+                </div>
+                <div class="column">
+                    <label for="class">Student Class</label>
+                    <input type="text" id="class" placeholder="Student Class here">
+                </div>
+            </div>
+            <button>Add Student</button>
+            <br>
+            <br>
+
+            <!--adding teachers form below-->
+            <div class="row">
+                <div class="column">
+                    <label for="teacherid">Teacher ID</label>
+                    <input type="text" id="teacherid" placeholder="Teacher Id here(Leave this field empty will be auto-generated)">
+                </div>
+                <div class="column">
+                    <label for="teachername">Teacher Name</label>
+                    <input type="text" id="teachername" placeholder="Teacher name here">
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="column">
+                    <label for="issue">Describe your issue</label>
+                    <textarea id="issue" placeholder="Describe your issue in detail here" rows="3"></textarea>
+                </div>
+            </div> -->
+            <button>Add Teacher</button>
+            <br>
+            <br>
+
+            <!--Get teachers Attendance form below-->
+            <div class="row">
+                <div class="column">
+                    <label for="teacherId">Teacher ID</label>
+                    <input type="text" id="teacherId" placeholder="Teacher ID here">
+                </div>
+                <div class="column">
+                    <label for="month">Month</label>
+                    <input type="text" id="month" placeholder="Month here">
+                </div>
+                <div class="column">
+                    <label for="year">Year</label>
+                    <input type="text" id="year" placeholder="Year here">
+                </div>
+            </div>
+            <button>Get Teacher Attendance Record</button>
+        </form>
+    </div>
+</body>
+</html>

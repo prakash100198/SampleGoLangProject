@@ -1,6 +1,5 @@
 package rest_handlers
 
-
 import (
 	"encoding/json"
 	"fmt"
@@ -10,19 +9,15 @@ import (
 	// "gorm.io/gorm"
 	// repository "attendance/Package/repository"
 	models "attendance/Models"
-	services "attendance/Services"
+	services "attendance/Service"
 	"github.com/gorilla/mux"
 	// "github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	_ "github.com/lib/pq"
 )
 
-
-
 // var DB *gorm.DB
 var err error
-
-
 
 type RestHandler interface {
 	GetStudents(w http.ResponseWriter, r *http.Request)
@@ -43,8 +38,6 @@ type PunchInInitialData struct {
 	AttendanceId string `json:"attendanceid"` //id would be of either student or teacher
 	Class        int    `json:"class"`
 }
-
-
 
 type Attendance struct {
 	AttendanceId string `json:"attendanceid"` //id would be of either student or teacher

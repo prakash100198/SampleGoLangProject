@@ -4,7 +4,7 @@ import (
 	repository "attendance/Repository"
 	rest_handlers "attendance/RestHandlers"
 	user_routes "attendance/Router"
-	services "attendance/Services"
+	services "attendance/Service"
 
 	models "attendance/Models"
 	"fmt"

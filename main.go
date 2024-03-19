@@ -6,7 +6,7 @@ import (
 	repository "attendance/Repository"
 	rest_handlers "attendance/RestHandlers"
 	user_routes "attendance/Router"
-	services "attendance/Services"
+	services "attendance/Service"
 	"fmt"
 	"log"
 	"net/http"
@@ -23,8 +23,6 @@ import (
 )
 
 var err error
-
-
 
 type db struct {
 	db *gorm.DB
@@ -59,7 +57,7 @@ func initialMigration() *gorm.DB {
 	dbURI := "host=postgres-postgresql.devtron-demo user=postgres dbname=postgres sslmode=disable password=prakash port=5432"
 	//postgres-devtron-demo-postgresql-0
 	// url := "postgres://postgres:prakash@localhost:5432/postgres?sslmode=disable"
-	
+
 	var dB *gorm.DB
 	dB, err = gorm.Open("postgres", dbURI)
 
