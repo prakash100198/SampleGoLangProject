@@ -10,10 +10,6 @@ RUN go build -o main .
 # RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main App.go
 CMD ["/app/main"]
 
-
-# Set environment variable
-# ENV APP_NAME sams
-# ENV CMD_PATH main.go
  
 # Copy application data into image
 # COPY . ./
