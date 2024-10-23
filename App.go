@@ -10,8 +10,6 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-
-
 type AppInterfaceImpl struct {
 	MuxRouter *mux.Router
 	dB        *gorm.DB
