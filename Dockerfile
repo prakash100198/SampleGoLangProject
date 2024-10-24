@@ -6,6 +6,7 @@ FROM golang:latest as builder
 # ADD /public ./app
 WORKDIR /app
 
+
 # COPY /public /app
 # RUN go build -o main .
 # RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main App.go
