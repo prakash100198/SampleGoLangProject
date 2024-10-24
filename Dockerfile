@@ -3,10 +3,10 @@
 FROM golang:latest as builder 
  
  RUN mkdir /app
-ADD /public ./app
+# ADD /public ./app
 WORKDIR /app
-COPY /public /app
-RUN go build -o main .
+# COPY /public /app
+# RUN go build -o main .
 # RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main App.go
 CMD ["/app/main"]
 
