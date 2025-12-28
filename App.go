@@ -21,6 +21,8 @@ type AppInterfaceImpl struct {
 
 
 
+
+
 func NewApp(MuxRouter *mux.Router, dB *gorm.DB) *AppInterfaceImpl {
 	app := &AppInterfaceImpl{
 		MuxRouter: MuxRouter,
